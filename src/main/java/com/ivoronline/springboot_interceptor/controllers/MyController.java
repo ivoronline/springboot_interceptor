@@ -7,9 +7,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class MyController {
 
+  //===================================================================
+  // HELLO
+  //===================================================================
   @ResponseBody
-  @RequestMapping("/Hello")
-  public String hello() {
+  @RequestMapping("Hello")
+  String hello() {
     System.out.println("Controller:");
     return "Hello from Controller";
   }

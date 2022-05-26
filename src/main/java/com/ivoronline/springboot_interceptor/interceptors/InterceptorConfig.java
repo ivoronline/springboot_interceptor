@@ -8,8 +8,12 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
 @Component
 public class InterceptorConfig extends WebMvcConfigurationSupport {
 
+  //PROPERTIES
   @Autowired MyInterceptor myInterceptor;
 
+  //===================================================================
+  // ADD INTERCEPTORS
+  //===================================================================
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
 		registry.addInterceptor(myInterceptor);
